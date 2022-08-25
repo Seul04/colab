@@ -1,0 +1,186 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "lession4장.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMKD40JqLrothqIw9mNE31h",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Seul04/colab/blob/main/lession4%EC%9E%A5.ipynb..\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "**데이터 타입**"
+      ],
+      "metadata": {
+        "id": "VA4uUK2WbRTL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aQXlMPg0bM1I",
+        "outputId": "e61d5636-8304-4c18-ac66-499ef72b8295"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "var1 변수의 데이터 타입은 <class 'int'>\n",
+            "var2 변수의 데이터 타입은 <class 'float'>\n",
+            "var3 변수의 데이터 타입은 <class 'str'>\n",
+            "var4 변수의 데이터 타입은 <class 'bool'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "var1, var2, var3, var4 = 100, 3.14, \"안산공고\", True\n",
+        "print(\"var1 변수의 데이터 타입은\", type(var1))\n",
+        "print(\"var2 변수의 데이터 타입은\", type(var2))\n",
+        "print(\"var3 변수의 데이터 타입은\", type(var3))\n",
+        "print(\"var4 변수의 데이터 타입은\", type(var4))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"\\n줄바꿈\\n연습 \")\n",
+        "print(\"\\t탭키\\t연습\")\n",
+        "print(\"어떤 글자를 \\\"강조\\\" 하는 효과1\")\n",
+        "print(\"어떤 글자를 \\\"강조\\\" 하는 효과2\")\n",
+        "print(\"\\\\\\\\ 백슬래시 2개 출력\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aW0n4E2yi9ib",
+        "outputId": "31f54ff5-34fb-470a-b487-6eac8f9b7562"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "줄바꿈\n",
+            "연습 \n",
+            "\t탭키\t연습\n",
+            "어떤 글자를 \"강조\" 하는 효과1\n",
+            "어떤 글자를 \"강조\" 하는 효과2\n",
+            "\\\\ 백슬래시 2개 출력\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**형성평가 : 두 문자열을 입력받고 두 문자열의 길이 차이를 체크하기**"
+      ],
+      "metadata": {
+        "id": "5JoHe0Y5mL1f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var1 = input(\"첫 번째 문자열 ==>\")\n",
+        "var2 = input(\"두 번째 문자열 ==>\")\n",
+        "\n",
+        "len1 = len(var1)\n",
+        "len2 = len(var2)\n",
+        "\n",
+        "diff = len1 - len2\n",
+        "print(\"두 문자열의 길이 차이는\", diff, \"입니다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zKXoc-1Ply68",
+        "outputId": "ea739fdb-a801-4ade-c898-288b61eab479"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "첫 번째 문자열 ==>난생처음 파이썬\n",
+            "두 번째 문자열 ==>First Python\n",
+            "두 문자열의 길이 차이는 -4 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**더블클릭 또는 Enter 키를 눌러 수정**"
+      ],
+      "metadata": {
+        "id": "gByw_jAAogI7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1 = input(\"문자열 입력 : \")\n",
+        "print(\"입력된 문자열의 길이 : \", str1)\n",
+        "print(\"입력된 문자열을 대문자로 변환 : \")\n",
+        "print(\"입력된 문자열을 소문자로 변환 : \")\n",
+        "print(\"입력된 문자열 중 추워...\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dIZIf6m9ofzr",
+        "outputId": "997a3b7d-6dc4-4fe0-922e-d49c31472ab9"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "문자열 입력 : 1\n",
+            "입력된 문자열의 길이 :  1\n",
+            "입력된 문자열을 대문자로 변환 : \n",
+            "입력된 문자열을 소문자로 변환 : \n",
+            "입력된 문자열 중 추워...\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
