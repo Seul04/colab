@@ -1,0 +1,116 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "lession4.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPgidQ2TaOMpFerm+snGEDo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Seul04/colab/blob/main/lession4.ipynb(2)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3장 연산자 \n",
+        "형성평가-파운드를 킬로그램으로 변경"
+      ],
+      "metadata": {
+        "id": "Z57cMByEzdqr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HEXZe8DXvsgO",
+        "outputId": "bd11fc75-8969-48b9-81e4-26248fe474af"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "파운드를 입력하시오 : 15\n",
+            "15.0 파운드는 6.804 킬로그램입니다.\n",
+            "킬로그램을 입력하세요 : 15\n",
+            "15.0 킬로그램은 33.069 파운드입니다. \n"
+          ]
+        }
+      ],
+      "source": [
+        "pound = float(input(\"파운드를 입력하시오 : \"))\n",
+        "kg = pound * 0.453592\n",
+        "print(pound, \"파운드는\", round(kg, 3), \"킬로그램입니다.\")\n",
+        "kg = float(input(\"킬로그램을 입력하세요 : \"))\n",
+        "pound = kg * 2.204623\n",
+        "print(kg, \"킬로그램은\" , round(pound, 3), \"파운드입니다. \")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2번째 형성평가 : 편의점 하루 매출 계산하기\n"
+      ],
+      "metadata": {
+        "id": "mDaaJyOd3Xpw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total = 0\n",
+        "#구입\n",
+        "total = total - (900 * 10) # 삼각김밥 10개\n",
+        "total = total - (3500 * 5) # 도시락 5개\n",
+        "#판매\n",
+        "total = total + (1800 * 2) # 바나나 우유\n",
+        "total = total + (4000 * 4) # 도시락 4개\n",
+        "total = total + 1500 # 콜라\n",
+        "total = total + (2000 * 4) # 새우깡\n",
+        "total = total + (1800 * 5) # 캔커피\n",
+        "\n",
+        "print(\"오늘 총 매출액은\", total, \"입니다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Tq5JNV53et4",
+        "outputId": "5d158bd1-f135-4779-8921-b857d4682e1e"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "오늘 총 매출액은 11600 입니다.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
